@@ -3,14 +3,14 @@
 all: pip vsetup von
 pip: 
 	echo "watch me go"
-	easy_install pip
-	pip install virtualenv
+	easy_install pip3
+	pip3 install virtualenv
 
 #Here we're setting up your virtual environment
 #Here it's "Touch" but later you'll need to use source
 vsetup: 
 	virtualenv venv
-	virtualenv -p /usr/bin/python2.7 venv
+	virtualenv -p /usr/bin/python3 venv
 	touch venv/bin/activate
 #Now your virtual environment is on
 von: 
